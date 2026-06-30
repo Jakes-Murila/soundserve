@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@soundserve/shared": ["../../packages/shared/src"],
+      "@soundserve/ui": ["../../packages/ui/src"]
+    }
+  },
+  "references": [
+    { "path": "../../packages/shared" },
+    { "path": "../../packages/ui" }
+  ],
+  "include": ["src", "vite.config.ts"]
+}
